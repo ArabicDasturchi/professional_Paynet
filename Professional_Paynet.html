@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Profession Paynet - O'zbekistondagi barcha mobil operatorlar va to'lov xizmatlari">
+    <meta name="keywords" content="Paynet, Uzmobile, Mobiuz, Beeline, Ucell, UMS, Humans, to'lov, sim karta">
+    <meta name="author" content="Profession Paynet">
+    <meta name="robots" content="index, follow">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#1a73e8">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <title>Profession Paynet - Professional To'lov Xizmatlari</title>
+    <link rel="stylesheet" href="Professional_paynet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="logo">
+                    <h1>Profession Paynet</h1>
+                </div>
+                <nav class="nav-desktop">
+                    <ul>
+                        <li><a href="#home">Bosh sahifa</a></li>
+                        <li class="dropdown">
+                            <a href="#companies">Kompaniyalar</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#uzmobile">Uzmobile</a></li>
+                                <li><a href="#mobiuz">Mobiuz</a></li>
+                                <li><a href="#beeline">Beeline</a></li>
+                                <li><a href="#ucell">Ucell</a></li>
+                                <li><a href="#ums">UMS</a></li>
+                                <li><a href="#humans">Humans</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#simcards">SIM kartalar</a></li>
+                        <li><a href="#payment">To'lov xizmatlari</a></li>
+                        <li><a href="#news">Yangiliklar</a></li>
+                        <li><a href="#contact">Bog'lanish</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar Menu -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h2>Menu</h2>
+            <button class="close-btn" id="closeSidebar">×</button>
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="#home"><i class="icon-home"></i>Bosh sahifa</a></li>
+                <li class="has-submenu">
+                    <a href="#companies"><i class="icon-company"></i>Kompaniyalar</a>
+                    <ul class="submenu">
+                        <li><a href="#uzmobile">Uzmobile</a></li>
+                        <li><a href="#mobiuz">Mobiuz</a></li>
+                        <li><a href="#beeline">Beeline</a></li>
+                        <li><a href="#ucell">Ucell</a></li>
+                        <li><a href="#ums">UMS</a></li>
+                        <li><a href="#humans">Humans</a></li>
+                    </ul>
+                </li>
+                <li><a href="#simcards"><i class="icon-sim"></i>SIM kartalar</a></li>
+                <li><a href="#payment"><i class="icon-payment"></i>To'lov xizmatlari</a></li>
+                <li><a href="#news"><i class="icon-news"></i>Yangiliklar</a></li>
+                <li><a href="#contact"><i class="icon-contact"></i>Bog'lanish</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content" data-aos="fade-up">
+                    <h2 class="hero-title">O'zbekistondagi eng ishonchli to'lov xizmati</h2>
+                    <p class="hero-subtitle">Barcha mobil operatorlar: Uzmobile, Mobiuz, Beeline, Ucell, UMS, Humans bilan qulay to'lovlar</p>
+                    <div class="hero-buttons">
+                        <a href="#payment" class="btn btn-primary">To'lovni boshlash</a>
+                        <a href="#companies" class="btn btn-secondary">Kompaniyalar</a>
+                        <a href="#simcards" class="btn btn-secondary">Tariflarni ko'rish</a>
+                    </div>
+                </div>
+                <div class="hero-stats" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-item">
+                        <h3>1.5M+</h3>
+                        <p>Foydalanuvchilar</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>24/7</h3>
+                        <p>Xizmat ko'rsatish</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>6</h3>
+                        <p>Mobil operatorlar</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>99.9%</h3>
+                        <p>Xavfsizlik</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Services Section -->
+        <section id="our-services" class="our-services">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Xizmatlarimiz</h2>
+                <div class="services-grid">
+                    <div class="service-card" data-aos="fade-right">
+                        <i class="icon-payment"></i>
+                        <h3>Tezkor to'lovlar</h3>
+                        <p>Barcha operatorlar uchun xavfsiz va tezkor to'lovlar.</p>
+                    </div>
+                    <div class="service-card" data-aos="fade-up">
+                        <i class="icon-sim"></i>
+                        <h3>SIM karta xizmatlari</h3>
+                        <p>Yangi raqamlar, tariflar va internet paketlar tanlovi.</p>
+                    </div>
+                    <div class="service-card" data-aos="fade-left">
+                        <i class="icon-support"></i>
+                        <h3>24/7 Yordam</h3>
+                        <p>Har qanday savol uchun doimiy qo'llab-quvvatlash.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Companies Section -->
+        <section id="companies" class="companies">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Kompaniyalar</h2>
+                <div class="companies-grid">
+                    <div id="uzmobile" class="company-card" data-aos="fade-up">
+                        <div class="company-logo uzmobile-logo">📡</div>
+                        <h3>Uzmobile</h3>
+                        <p>O'zbekistonning milliy mobil operatori, keng qamrov va arzon tariflar.</p>
+                        <p><strong>Tashkil topgan:</strong> 2005 yil</p>
+                        <p><strong>Qamrov:</strong> Butun O'zbekiston</p>
+                        <a href="#uzmobile-details" class="btn-link">Batafsil</a>
+                    </div>
+                    <div id="mobiuz" class="company-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="company-logo mobiuz-logo">📱</div>
+                        <h3>Mobiuz</h3>
+                        <p>Zamonaviy aloqa xizmatlari va yuqori tezlikdagi internet.</p>
+                        <p><strong>Tashkil topgan:</strong> 2010 yil</p>
+                        <p><strong>Qamrov:</strong> 90% hududlar</p>
+                        <a href="#mobiuz-details" class="btn-link">Batafsil</a>
+                    </div>
+                    <div id="beeline" class="company-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="company-logo beeline-logo">🐝</div>
+                        <h3>Beeline</h3>
+                        <p>Sifatli aloqa va keng imkoniyatli tariflar.</p>
+                        <p><strong>Tashkil topgan:</strong> 1996 yil</p>
+                        <p><strong>Qamrov:</strong> 95% hududlar</p>
+                        <a href="#beeline-details" class="btn-link">Batafsil</a>
+                    </div>
+                    <div id="ucell" class="company-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="company-logo ucell-logo">📞</div>
+                        <h3>Ucell</h3>
+                        <p>Keng qamrovli tarmoq va biznes uchun maxsus tariflar.</p>
+                        <p><strong>Tashkil topgan:</strong> 1996 yil</p>
+                        <p><strong>Qamrov:</strong> 92% hududlar</p>
+                        <a href="#ucell-details" class="btn-link">Batafsil</a>
+                    </div>
+                    <div id="ums" class="company-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="company-logo ums-logo">🌐</div>
+                        <h3>UMS</h3>
+                        <p>Universal mobil xizmatlar va internetga yo'naltirilgan tariflar.</p>
+                        <p><strong>Tashkil topgan:</strong> 2014 yil</p>
+                        <p><strong>Qamrov:</strong> Asosiy shaharlar</p>
+                        <a href="#ums-details" class="btn-link">Batafsil</a>
+                    </div>
+                    <div id="humans" class="company-card" data-aos="fade-up" data-aos-delay="500">
+                        <div class="company-logo humans-logo">🤝</div>
+                        <h3>Humans</h3>
+                        <p>Innovatsion aloqa xizmatlari va foydalanuvchiga qulay tariflar.</p>
+                        <p><strong>Tashkil topgan:</strong> 2020 yil</p>
+                        <p><strong>Qamrov:</strong> Toshkent va yirik shaharlar</p>
+                        <a href="#humans-details" class="btn-link">Batafsil</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SIM Cards Section -->
+        <section id="simcards" class="simcards">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">SIM Kartalar</h2>
+                <div class="simcard-tabs">
+                    <button class="tab-btn active" data-tab="all">Barchasi</button>
+                    <button class="tab-btn" data-tab="prepaid">Oldindan to'lov</button>
+                    <button class="tab-btn" data-tab="postpaid">Keyingi to'lov</button>
+                    <button class="tab-btn" data-tab="data">Internet paketlar</button>
+                </div>
+                <div class="simcards-content">
+                    <div class="simcard-grid" id="simcardGrid">
+                        <!-- SIM cards will be dynamically loaded here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Payment Services Section -->
+        <section id="payment" class="payment-services">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">To'lov Xizmatlari</h2>
+                <div class="payment-form-container">
+                    <form class="payment-form" id="paymentForm">
+                        <div class="form-group">
+                            <label for="operator">Operatorni tanlang</label>
+                            <select id="operator" name="operator" required>
+                                <option value="">Tanlang...</option>
+                                <option value="uzmobile">Uzmobile</option>
+                                <option value="mobiuz">Mobiuz</option>
+                                <option value="beeline">Beeline</option>
+                                <option value="ucell">Ucell</option>
+                                <option value="ums">UMS</option>
+                                <option value="humans">Humans</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefon raqami</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+998 90 123 45 67" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="amount">To'lov miqdori</label>
+                            <input type="number" id="amount" name="amount" placeholder="10 000" min="1000" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">To'lovni amalga oshirish</button>
+                    </form>
+                    <div class="payment-info">
+                        <h3>Xavfsiz to'lov</h3>
+                        <p>Barcha to'lovlar 256-bit SSL shifrlash bilan himoyalangan. To'lovlaringizni ishonch bilan amalga oshiring.</p>
+                        <div class="security-badges">
+                            <span class="badge">SSL</span>
+                            <span class="badge">PCI DSS</span>
+                            <span class="badge">3D Secure</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Section -->
+        <section id="reviews" class="reviews">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Foydalanuvchilar sharhlari</h2>
+                <div class="review-slider">
+                    <div class="review-card" data-aos="fade-up" data-aos-delay="100">
+                        <p>"Profession Paynet orqali to'lovlarimni osongina amalga oshirdim. Juda qulay!"</p>
+                        <h4>– Alixon, Toshkent</h4>
+                    </div>
+                    <div class="review-card" data-aos="fade-up" data-aos-delay="200">
+                        <p>"SIM karta tanlash va to'lov jarayoni juda tez va tushunarli."</p>
+                        <h4>– Malika, Samarqand</h4>
+                    </div>
+                    <div class="review-card" data-aos="fade-up" data-aos-delay="300">
+                        <p>"24/7 yordam xizmati ajoyib! Har doim savollarimga javob topdim."</p>
+                        <h4>– Jasur, Farg'ona</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- News Section -->
+        <section id="news" class="news">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Yangiliklar</h2>
+                <div class="news-grid">
+                    <article class="news-card" data-aos="fade-up">
+                        <div class="news-image" style="background-image: url('news1.jpg');"></div>
+                        <div class="news-content">
+                            <span class="news-date">27 Iyun, 2025</span>
+                            <h3>Yangi to'lov tizimi ishga tushdi</h3>
+                            <p>Profession Paynet yangi xavfsizlik tizimlari bilan jihozlandi...</p>
+                            <a href="#" class="read-more">Batafsil o'qish</a>
+                        </div>
+                    </article>
+                    <article class="news-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="news-image" style="background-image: url('news2.jpg');"></div>
+                        <div class="news-content">
+                            <span class="news-date">25 Iyun, 2025</span>
+                            <h3>Mobil ilovamiz yangilandi</h3>
+                            <p>iOS va Android uchun yangi funksiyalar qo'shildi...</p>
+                            <a href="#" class="read-more">Batafsil o'qish</a>
+                        </div>
+                    </article>
+                    <article class="news-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="news-image" style="background-image: url('news3.jpg');"></div>
+                        <div class="news-content">
+                            <span class="news-date">20 Iyun, 2025</span>
+                            <h3>Chegirmalar kampaniyasi</h3>
+                            <p>Barcha to'lovlarga 5% chegirma taqdim etilmoqda...</p>
+                            <a href="#" class="read-more">Batafsil o'qish</a>
+                        </div>
+                    </article>
+                    <article class="news-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="news-image" style="background-image: url('news4.jpg');"></div>
+                        <div class="news-content">
+                            <span class="news-date">15 Iyun, 2025</span>
+                            <h3>Humans operatori qo'shildi</h3>
+                            <p>Endi Humans tariflarini ham Profession Paynet orqali to'ldirishingiz mumkin!</p>
+                            <a href="#" class="read-more">Batafsil o'qish</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Bog'lanish</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Biz bilan aloqa</h3>
+                        <div class="contact-item">
+                            <i class="icon-location"></i>
+                            <div>
+                                <h4>Manzil</h4>
+                                <p>Toshkent sh., Amir Temur ko'chasi 100</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="icon-phone"></i>
+                            <div>
+                                <h4>Telefon</h4>
+                                <p>+998 71 123 45 67</p>
+                                <p>+998 90 987 65 43 (24/7)</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="icon-email"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>info@professionpaynet.uz</p>
+                                <p>support@professionpaynet.uz</p>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contactForm">
+                        <h3>Xabar yuborish</h3>
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Ismingiz" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" rows="5" placeholder="Xabaringiz" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Yuborish</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Profession Paynet</h3>
+                    <p>O'zbekistondagi eng ishonchli to'lov xizmati. Barcha mobil operatorlar va to'lov xizmatlari bir joyda.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="icon-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="icon-instagram"></i></a>
+                        <a href="#" aria-label="Telegram"><i class="icon-telegram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Tezkor havolalar</h4>
+                    <ul>
+                        <li><a href="#home">Bosh sahifa</a></li>
+                        <li><a href="#companies">Kompaniyalar</a></li>
+                        <li><a href="#simcards">SIM kartalar</a></li>
+                        <li><a href="#payment">To'lov xizmatlari</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Kompaniyalar</h4>
+                    <ul>
+                        <li><a href="#uzmobile">Uzmobile</a></li>
+                        <li><a href="#mobiuz">Mobiuz</a></li>
+                        <li><a href="#beeline">Beeline</a></li>
+                        <li><a href="#ucell">Ucell</a></li>
+                        <li><a href="#ums">UMS</a></li>
+                        <li><a href="#humans">Humans</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Mobil ilova</h4>
+                    <p>Yuklab oling va qulay foydalaning</p>
+                    <div class="app-buttons">
+                        <a href="#" class="app-btn">
+                            <i class="icon-apple"></i>
+                            <span>App Store</span>
+                        </a>
+                        <a href="#" class="app-btn">
+                            <i class="icon-android"></i>
+                            <span>Google Play</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Profession Paynet. Barcha huquqlar himoyalangan.</p>
+                <div class="footer-links">
+                    <a href="#">Maxfiylik siyosati</a>
+                    <a href="#">Foydalanish shartlari</a>
+                    <a href="#">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="Professional_paynet.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 800, once: true });</script>
+</body>
+</html>
